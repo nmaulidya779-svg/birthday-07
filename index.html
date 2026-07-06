@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#07111F">
+
+    <title>Happy Birthday 🤍</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ==========================================
+                    BACKGROUND
+    =========================================== -->
+
+    <div id="background">
+
+        <div class="aurora aurora1"></div>
+        <div class="aurora aurora2"></div>
+
+        <div id="stars"></div>
+
+        <div class="moon"></div>
+
+    </div>
+
+    <!-- ==========================================
+                    AUDIO
+    =========================================== -->
+
+    <audio
+        id="bgMusic"
+        preload="auto"
+        loop>
+    </audio>
+
+    <!-- ==========================================
+                TOUCH SCREEN
+    =========================================== -->
+
+    <section
+        id="touchScreen"
+        class="page active">
+
+        <div class="glass-card">
+
+            <div class="logo">
+
+                🤍
+
+            </div>
+
+            <h1 class="title">
+
+                Happy Birthday
+
+            </h1>
+
+            <h2
+                id="personName"
+                class="person">
+
+                bestiee
+
+            </h2>
+
+            <p class="subtitle">
+
+                aku ada bikin sesuatu buat kamuu.. yuu di liatt
+
+            </p>
+
+            <button
+                id="touchBtn"
+                class="primary-btn">
+
+                ✨ mulai
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+                    INTRO
+    =========================================== -->
+
+    <section
+        id="intro"
+        class="page">
+
+        <div class="glass-card">
+
+            <p class="introText">
+
+                ...
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+                    LOADING
+    =========================================== -->
+
+    <section
+        id="loadingScreen"
+        class="page">
+
+        <div class="glass-card loading-card">
+
+            <h2>
+
+                Menyiapkan Kejutan...
+
+            </h2>
+
+            <div class="loading-bar">
+
+                <div
+                    id="progressBar"
+                    class="loading-progress">
+
+                </div>
+
+            </div>
+
+            <h3
+                id="percent">
+
+                0%
+
+            </h3>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+                    OPENING
+    =========================================== -->
+
+    <section
+        id="opening"
+        class="page">
+
+        <div class="glass-card">
+
+            <h1
+                id="openingTitle">
+
+                Happy Birthday
+
+            </h1>
+
+            <h2
+                id="openingName">
+
+                bestiee
+
+            </h2>
+
+            <p
+                id="openingText">
+
+                ...
+
+            </p>
+
+            <button
+                id="startJourney"
+                class="primary-btn">
+
+                💌 Lanjutkan
+
+            </button>
+
+        </div>
+
+    </section>
+        <!-- ==========================================
+                    ENVELOPE PAGE
+    =========================================== -->
+
+    <section
+        id="envelopePage"
+        class="page">
+
+        <div class="glass-card envelope-card">
+
+            <div class="envelope-icon">
+
+                💌
+
+            </div>
+
+            <h2>
+
+                ini ada sesuatu buat kamu
+
+            </h2>
+
+            <p>
+
+                Ada pesan yang aku pengen sampaikan
+                Semoga kamu suka yaaa.
+
+            </p>
+
+            <button
+                id="openEnvelopeBtn"
+                class="primary-btn">
+
+                Buka Surat
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+                    LETTER PAGE
+    =========================================== -->
+
+    <section
+        id="letterPage"
+        class="page">
+
+        <div class="glass-card letter-card">
+
+            <h2>
+
+                untuk
+                <span id="letterName">
+                    kamu takbotak wkkwkw
+                </span>
+
+                🤍
+
+            </h2>
+
+            <div
+                id="letterContent"
+                class="letter-content">
+
+            </div>
+
+            <button
+                id="letterNextBtn"
+                class="primary-btn">
+
+                ❤️ Lanjut
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+                    MINI GAME
+    =========================================== -->
+
+    <section
+        id="gamePage"
+        class="page">
+
+        <div class="glass-card game-card">
+
+            <h2>
+
+                Tangkap Semua Hati ❤️
+
+            </h2>
+
+            <p>
+
+                Tangkap semua hati untuk membuka
+                kejutan berikutnya.
+
+            </p>
+
+   <div class="game-header">
+
+    <div id="giftBox">
+
+        🎁
+
+    </div>
+
+    <div class="game-info">
+
+        ❤️ <span id="score">0</span>/10
+
+    </div>
+
+</div>
+
+<div id="gameArea"></div>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+                    VIDEO PAGE
+    =========================================== -->
+
+    <section
+        id="videoPage"
+        class="page">
+
+        <div class="glass-card video-card">
+
+            <h2>
+
+                Happy birthday orang baikk 🤍
+
+            </h2>
+
+            <video
+                id="memoryVideo"
+                controls
+                playsinline
+                preload="metadata">
+
+                Browser kamu tidak mendukung video.
+
+            </video>
+
+            <button
+                id="videoNextBtn"
+                class="primary-btn">
+
+                📸 Lanjut
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+                    GALLERY PAGE
+    =========================================== -->
+
+    <section
+        id="galleryPage"
+        class="page">
+
+        <div class="glass-card gallery-card">
+
+            <h2>
+
+                ini sebagian foto foto kita,inget gaa nih?
+
+            </h2>
+
+            <div
+                id="galleryContainer"
+                class="gallery-container">
+
+            </div>
+
+            <div class="gallery-control">
+
+                <button
+                    id="prevPhoto">
+
+                    ←
+
+                </button>
+
+                <button
+                    id="nextPhoto">
+
+                    →
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+        <!-- ==========================================
+                    TIMELINE PAGE
+    =========================================== -->
+
+    <section
+        id="timelinePage"
+        class="page">
+
+        <div class="glass-card timeline-card">
+
+            <h2>
+
+                mulai 🤍
+
+            </h2>
+
+            <div
+                id="timelineContainer"
+                class="timeline-container">
+
+                <!-- Timeline akan dibuat oleh JavaScript -->
+
+            </div>
+
+            <button
+                id="timelineNextBtn"
+                class="primary-btn">
+
+                💝 Lanjut
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+                    GIFT PAGE
+    =========================================== -->
+
+    <section
+        id="giftPage"
+        class="page">
+
+        <div class="glass-card gift-card">
+
+            <div class="gift-icon">
+
+                🎁
+
+            </div>
+
+            <h2>
+
+                Ada Hadiah Terakhir
+
+            </h2>
+
+            <p>
+
+                Terima kasih sudah menyelesaikan
+                perjalanan kecil ini.
+
+            </p>
+
+            <button
+                id="openGiftBtn"
+                class="primary-btn">
+
+                Buka Hadiah
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+                    ENDING PAGE
+    =========================================== -->
+
+    <section id="endingPage" class="page">
+
+    <div class="glass-card">
+
+        <h1>🤍</h1>
+
+        <h2>Happy Birthday</h2>
+
+        <div id="endingText"></div>
+
+        <button id="replayBtn">
+
+            🔄 Ulangi Lagi
+
+        </button>
+
+    </section>
+
+    <!-- ==========================================
+                CONFETTI
+    =========================================== -->
+
+    <div id="confettiContainer"></div>
+
+    <!-- ==========================================
+                SOUND EFFECT
+    =========================================== -->
+
+    <audio
+        id="clickSound"
+        preload="auto">
+
+    </audio>
+
+    <audio
+        id="successSound"
+        preload="auto">
+
+    </audio>
+
+    <!-- ==========================================
+                CONFIG
+    =========================================== -->
+
+    <script src="config.js"></script>
+
+    <!-- ==========================================
+                SCRIPT
+    =========================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
