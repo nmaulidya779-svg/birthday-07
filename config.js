@@ -2,9 +2,9 @@ const CONFIG = {
 
     nama: "Naufal",
 
-    music: "music/birthday.mp3",
+    music: "birthday.mp3",
 
-    video: "video/adadehh.mp4",
+    video: "adadehh.mp4",
 
     intro: "ini aku buat khusus untuk kamu🤍",
 
@@ -20,9 +20,9 @@ const CONFIG = {
     ],
 
     gallery: [
-        "images/foto2.jpg",
-        "images/foto3.jpg",
-        "images/foto4.jpg"
+        "foto2.jpg",
+        "foto3.jpg",
+        "foto4.jpg"
     ],
 
     timeline: [
